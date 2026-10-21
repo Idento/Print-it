@@ -26,7 +26,7 @@ let num = 0;
 //Fonction permettant le changement de tous le contenu (dot, image et texte) en fonction du numéro donné.
 
 function changecontent(n){
-	bannerImg.src=`../assets/images/slideshow/${slides[n]['image']}`;
+	bannerImg.src=`./assets/images/slideshow/${slides[n]['image']}`;
 	dot[num].setAttribute('class', 'dot dot_selected');
 	let changeParagraph = document.createElement('p');
 	let change = changeParagraph.innerHTML = slides[n]['tagLine'];

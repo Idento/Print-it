@@ -1,1 +1,31 @@
-# Print-It WebSite v.1
+# Print it!
+
+A JavaScript image carousel added to an existing one-page website of a printing company.
+
+**Live site:** https://idento.github.io/Print-it/
+
+| Desktop | Mobile |
+| --- | --- |
+| ![Print it! on desktop](docs/desktop.jpg) | ![Print it! on mobile](docs/mobile.jpg) |
+
+## What was done
+
+The page (layout, texts, styles) already existed. My part is the **banner carousel in vanilla JavaScript**:
+
+- slides described in a data array (image and caption);
+- previous and next arrows;
+- one dot per slide, generated from the data, with the current slide highlighted;
+- infinite loop: after the last slide it goes back to the first, and the other way round.
+
+Fixes made later, in 2026:
+
+- the carousel image path was relative to the wrong folder and broke once the site was published in a sub-folder (`../assets` changed to `./assets`);
+- the page overflowed horizontally on phones: images are now constrained to their container and the sections stack below 900 px.
+
+## Stack
+
+HTML, CSS, vanilla JavaScript. Deployed on GitHub Pages with GitHub Actions.
+
+## Run locally
+
+Open `index.html` in a browser, or serve the folder with any static server.

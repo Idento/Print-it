@@ -295,3 +295,73 @@ footer div {
 		flex: 2;
 	}
 }
+
+/* Responsive: tablet and mobile */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media all and (max-width: 900px) {
+	#about-us,
+	#products,
+	#contact .container,
+	#why-us > div,
+	footer {
+		flex-direction: column;
+	}
+	#products div {
+		padding: 0;
+	}
+	#about-us li {
+		width: 100%;
+	}
+	#why-us > div {
+		align-items: center;
+		gap: 2em;
+	}
+	#contact .container {
+		padding: 3em 5%;
+		gap: 2em;
+	}
+	footer {
+		gap: 2em;
+		text-align: center;
+	}
+	.footer-logo {
+		width: 80%;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.logo {
+		width: 170px;
+	}
+	.btn {
+		padding: 12px 20px;
+	}
+	#banner {
+		min-height: 320px;
+	}
+	#banner p {
+		font-size: 30px;
+		line-height: 40px;
+		padding-inline: 50px;
+	}
+	#banner span {
+		font-size: 20px;
+	}
+	#banner .arrow {
+		width: 32px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	#contact h3 {
+		width: auto;
+	}
+	#contact .container > div > div {
+		flex-wrap: wrap;
+		gap: 1em;
+	}
+}
