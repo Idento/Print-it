@@ -21,6 +21,7 @@ Fixes made later, in 2026:
 
 - the carousel image path was relative to the wrong folder and broke once the site was published in a sub-folder (`../assets` changed to `./assets`);
 - the page overflowed horizontally on phones: images are now constrained to their container and the sections stack below 900 px.
+- the photos weighed 3.6 MB in total: recompressed to about 0.4 MB with no visible loss, and the last slide converted from PNG to JPEG.
 
 ## Stack
 
