@@ -23,6 +23,15 @@ Fixes made later, in 2026:
 - the page overflowed horizontally on phones: images are now constrained to their container and the sections stack below 900 px.
 - the photos weighed 3.6 MB in total: recompressed to about 0.4 MB with no visible loss, and the last slide converted from PNG to JPEG.
 
+## Lighthouse
+
+Measured on the live site on October 21, 2026, after the 2026 fixes (Lighthouse 13.5, median of 3 runs):
+
+| | Performance | Accessibility | Best practices | SEO |
+| --- | --- | --- | --- | --- |
+| Mobile | 88 | 92 | 92 | 91 |
+| Desktop | 98 | 92 | 96 | 91 |
+
 ## Stack
 
 HTML, CSS, vanilla JavaScript. Deployed on GitHub Pages with GitHub Actions.
